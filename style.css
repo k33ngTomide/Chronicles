@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+body{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  gap: 150px;
+  height: 700px;
+  margin: 80px;
+}
+
+
+
+.left-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  border-radius: 20px;
+
+}
+
+#chronicles{
+  font-size: 130px;
+}
+
+#chronicles a{
+  color: rgb(89, 144, 226);
+  font-size: 100px;
+  display: flex;
+  justify-content: right;
+  font-weight: 700;
+}
+
+.text-c{
+  font-size: 30px;
+  margin: 5px 0;
+  color: rgb(255, 255, 255);
+}
+
+.words{
+  margin-left: 150px;
+  color: rgb(50, 94, 138);
+}
+
+@media only screen and (max-width: 600px) {
+
+  body{
+    display: block;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 10px;
+    margin: 0;
+  }
+
+  .left-container{
+    max-width: 350px;
+    align-content: center;
+    margin-bottom: 30px;
+  }
+
+  #chronicles{
+    font-size: 70px;
+  }
+
+  #chronicles a{
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .signup__input,
+  .signup__submit,
+  .login__input, .login__submit{
+    width: 20px;
+    height: 10px;
+    font-size: 10px;
+  }
+
+  .signup__input::placeholder{
+    font-size: 15px;
+  }
+  .screen, .login-screen{
+    background: none;
+    max-width: 300px;
+    margin-left: 0;
+    padding: 0 0;
+    gap: 5px;
+
+  }
+
+  .login-container{
+    position: absolute;
+    margin-top: -600px;
+    z-index: 5;
+    align-self: center;
+    margin-left: 40px;
+
+  }
+
+  .screen__content{
+    width: 160px;
+  }
+
+  .screen__content, .login-screen__content{
+    display: flex;
+    align-content: center;
+    margin-left: 0;
+  }
+
+  .signup{
+    width: 100px;
+    align-content: center;
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+
+  }
+
+  .text-c, #rememberMe{
+    font-size: 15px;
+    margin: 0 0;
+    color: rgb(255, 255, 255);
+
+  }
+
+}

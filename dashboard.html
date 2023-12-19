@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chronicle Diary</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard" id="dashboard">
+        <div class="welcome">
+            <div class="">
+                <h1 class="welcome-text">Welcome to <span>Chronicles </span>Diary</h1>
+                <p >Dear <a href="" class="greet" id="incoming_user">Username</a>, What do you want to do?</p>
+            </div>
+
+            <div class="power-space">
+                <div class="buttons-space" >
+                    <button title="Dark / Light " class="logout-button" id="mode-button">
+                        <img src="./icons/icons8-sun-80.png" alt="" id="mode-image">
+                        Mode
+                    </button>
+                </div>
+
+                <div class="buttons-space" >
+                    <button title="Log out" class="logout-button" id="logout-button">
+                        <img src="./icons/icons8-logout-100.png" alt="">
+                        Log out
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="all-buttons">
+
+            <div class="buttons-space" >
+                <button class="activity-button" id="add-entry-button">
+                    <img src="./icons/icons8-add-80.png" alt="">
+                    <a>Add Entry</a>
+                </button>
+            </div>
+
+
+            <div class="buttons-space">
+                <button class="activity-button" id="find-entry-button">
+                    <img src="./icons/icons8-search-80.png" alt="">
+                    <a>Search</a>
+                </button>
+            </div>
+
+            <div class="buttons-space">
+                <button class="activity-button" id="delete-button">
+                    <img src="./icons/icons8-delete-80.png" alt="">
+                    <a>Delete Entry</a>
+                </button>
+            </div>
+
+            <div class="buttons-space">
+                <button class="activity-button" id="update-password">
+                    <img src="./icons/icons8-update-80.png" alt="">
+                    <a>Change password</a>
+                </button>
+            </div>
+
+            <div class="buttons-space">
+                <button class="activity-button" id="view">
+                    <img src="./icons/icons8-check-all-80.png" alt="">
+                    <a>View Entry</a>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="display-pane">
+
+            <div class="display" id="form-display">
+                <a class="close-entry-form" id="close-entry-form">&times;</a>
+                <form method="post" id="add-entry-form" class="add-entry-form">
+
+
+                </form>
+
+            </div>
+
+            <div class="display" id="result-display">
+                <img src='./icons/icons8-success-188.png' id="ok-image">
+                <h4 id="result-text"></h4>
+                <p id="result-body"></p>
+                <p id="date-time"></p>
+            </div>
+
+            <div class="display" id="bad-result-display">
+                <img src='./icons/icons8-cancel-188.png' id="not-ok-image">
+                <h4 id="bad-result-text"></h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

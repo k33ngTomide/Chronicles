@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Chronicles Diary</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+  <div class="left-container" id="left-container">
+    <div class="firstSection">
+      <h1 id="chronicles">Chronicles <br><a>Diary</a></h1>
+    </div>
+
+    <div>
+
+      <div class="text-c">
+        Unlocking Memories <br><span class="words"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="container">
+    <div class="screen">
+      <h1 class="signup__header">Sign Up</h1>
+      <div class="screen__content">
+
+        <form class="signup" method="post" id="signup">
+
+          <div class="signup__field">
+            <h4 id="signup-response"></h4>
+            <input type="email" class="signup__input" id="email" placeholder="Enter your E-mail" required>
+          </div>
+
+          <div class="signup__field">
+            <input type="password" class="signup__input" id="password" placeholder="Enter Password" required>
+          </div>
+
+          <div class="signup__field">
+            <input type="password" class="signup__input" id="confirm_password" placeholder="Confirm Password" required>
+          </div>
+
+
+
+          <button class="signup__submit" id="signup__submit" type="submit">
+            <span class="button__text">Sign up</span>
+          </button>
+
+          <a href="#" id="register">Register with </a>
+        </form>
+
+      </div>
+
+      <div class="login-area">
+        <div>Already have an account? </div>
+        <button id="login-button" type="submit">Login</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="login-container" id="login-container">
+
+    <div class="login-screen">
+
+      <button class="close-button" id="close-button">&times</button>
+
+      <div class="login-text">Log in</div>
+
+
+
+      <div class="login-screen__content">
+
+        <form class="login" method="post" id="login">
+
+          <div class="login__field">
+            <h4 id="login-response"></h4>
+
+            <input type="email" class="login__input" placeholder="E-mail" id="login_email" required>
+          </div>
+
+          <div class="login__field">
+            <input type="text" class="login__input" placeholder="Preferred Screen name" id="screen_name" required>
+          </div>
+
+          <div class="login__field">
+            <input type="password" class="login__input" placeholder="Password" id="login_password" required>
+          </div>
+
+          <div>
+            <input id="rememberMe" type="checkbox">
+            <label for="rememberMe">Remember me</label>
+          </div>
+
+          <button class="login__submit" type="submit" id="login__submit" >
+            <span class="button__text">Login</span>
+          </button>
+
+          <a href="#" id="forgotPassword">forgot password</a>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

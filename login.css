@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+
+.login-container {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	position: absolute;
+	align-self: center;
+}
+
+.login-text{
+	display: flex;
+	font-size: 45px;
+	color: white;
+	justify-content: center;
+	margin-bottom: 50px;
+	font-family: Raleway, sans-serif;
+	font-weight: bold;
+
+}
+
+.login-header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.close-button{
+	margin-top: 0px;
+	width: 30px;
+	font-size: 40px;
+	align-self: flex-end;
+	background: none;
+	border: none;
+	margin-right: 25px;
+	cursor: pointer;
+}
+
+.close-button:hover{
+	color: white;
+
+}
+
+.login{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+}
+
+#forgotPassword{
+	color: rgb(230, 227, 227);
+	text-decoration: none;
+	display: flex;
+	justify-content: right;
+}
+
+.login-screen {
+	background: linear-gradient(70deg, rgb(69, 134, 231),rgb(27, 28, 29),  rgb(69, 134, 231));
+	width: 700px;
+	/*height: 700px;*/
+	border-radius: 30px;
+	align-content: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.screen__content{
+	display: flex;
+	justify-content: center;
+}
+
+.login__input{
+
+	background: #fff;
+	font-size: 19px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	display: flex;
+	align-items: center;
+	width: auto;
+	color: #000000;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+
+}
+
+.login__submit{
+
+	background: rgb(89, 144, 226);
+	font-size: 19px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	font-weight: 700;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	color: #000000;
+	box-shadow: 0 2px 2px #000000;
+	cursor: pointer;
+	transition: .2s;
+	align-self: center;
+	align-content: center;
+
+}
+
+
+.button__text{
+	display: flex;
+	align-self: center;
+
+}
+
+.login__submit:hover{
+
+	background: rgb(120, 160, 221);
+	font-size: 25px;
+
+}
+

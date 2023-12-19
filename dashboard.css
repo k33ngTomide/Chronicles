@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+
+body{
+  background-color: black;
+  width: 100%;
+  color: white;
+  font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#dashboard{
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px;
+  
+}
+
+.welcome{
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  font-size: 30px;
+  align-content: center;
+
+}
+
+.welcome-text span{
+  color: rgb(69, 134, 231);
+}
+
+.greet{
+  color: rgb(69, 134, 231);
+  text-decoration: none;
+}
+
+.power-space{
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.all-buttons{
+  display: flex;
+  gap: 110px;
+  justify-content: center;
+  align-content: center;
+  margin: 50px 0px;
+}
+
+.logout-button, 
+.activity-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 9px;
+  box-shadow: white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.logout-button > img{
+  width: 50px;
+}
+
+.activity-button:hover{
+  background-color:  rgb(69, 231, 142);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+
+}
+
+.light-dark-mode {
+  background-color: #fff;
+  color: black;
+}
+
+.logout-button:hover{
+  background-color:  rgb(69, 134, 231);
+}
+
+#delete-button:hover{
+  background-color: red;
+}
+
+.buttons-space{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-family: Raleway;
+  
+}
+
+.display-pane{
+  display: flex;
+  justify-content: space-around;
+}
+
+.display{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  align-content: center;
+  align-items: center;
+}
+
+.add-entry-form{
+  display: flex;
+  gap: 40px;
+  flex-direction: column
+}
+
+.close-entry-form{
+  display: none;
+  font-size: 40px;
+  color: red;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+#ok-image, #not-ok-image {
+  display: none;
+  width: 200px;
+}
+
+
