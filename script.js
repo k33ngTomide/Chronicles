@@ -1,5 +1,6 @@
 let loggedInUser = "";
 let userScreenName = "";
+let renderLink = "";
 
 
 // sign up form submission
@@ -21,7 +22,7 @@ form.addEventListener('submit', function (e) {
     password: password.value
   };
   console.log(signupRequest);
-  const url = 'http://localhost:8080/Chronicles/register';
+  const url = `${renderLink}/Chronicles/register`;
 
   fetch( url, {
     method: 'POST',
@@ -104,7 +105,7 @@ submitLoginForm.addEventListener('submit', function (e) {
     userScreenName = screenName;
     console.log('user screen name', userScreenName);
   console.log(loginRequest);
-  const url = 'http://localhost:8080/Chronicles/unlock';
+  const url = `${renderLink}/Chronicles/unlock`;
 
   fetch( url, {
     method: 'POST',

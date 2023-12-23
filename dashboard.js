@@ -1,6 +1,8 @@
 
 let loggedInUser = "";
 let userScreenName = "";
+let renderLink = "";
+
 document.addEventListener('DOMContentLoaded', function () {
      loggedInUser = localStorage.getItem('loggedInUser');
      userScreenName = localStorage.getItem('userScreenName')
@@ -19,7 +21,7 @@ const logoutButton = document.querySelector('#logout-button');
 logoutButton.addEventListener('click', () => {
     console.log("Logout button clicked!");
 
-    const url = 'http://localhost:8080/Chronicles/lock';
+    const url = `${renderLink}/Chronicles/lock`;
 
     fetch( url, {
         method: 'POST',
@@ -137,7 +139,7 @@ function extractAddEntryField() {
         body: entryBody.value
     }
 
-    const url = 'http://localhost:8080/Chronicles/createNewEntry';
+    const url = `${renderLink}/Chronicles/createNewEntry`;
 
     console.log(entryRequest);
 
@@ -219,7 +221,7 @@ function extractUpdatePasswordEntryField(){
         oldPassword: oldPassword.value,
         newPassword: newPassword.value
     }
-    let url = 'http://localhost:8080/Chronicles/update'
+    let url = `${renderLink}/Chronicles/update`;
     fetch(url, {
         method: 'PATCH',
         body: JSON.stringify(updatePasswordRequest),
@@ -265,7 +267,7 @@ function extractDeleteEntryField(){
         title: entryTitle.value,
     }
 
-    const url = 'http://localhost:8080/Chronicles/deleteEntry';
+    const url = `${renderLink}/Chronicles/deleteEntry`;
 
     console.log(deleteRequest);
 
@@ -303,7 +305,7 @@ function extractSearchEntryField(){
     }
 
 
-    const url = `http://localhost:8080/Chronicles/findEntry/${loggedInUser}/${entryTitle}`;
+    const url = `${renderLink}/Chronicles/findEntry/${loggedInUser}/${entryTitle}`;
 
     console.log("Searching for ...", entryTitle);
 

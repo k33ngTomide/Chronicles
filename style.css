@@ -46,7 +46,7 @@ body{
   color: rgb(50, 94, 138);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 728px) {
 
   body{
     display: block;
@@ -92,12 +92,10 @@ body{
   }
 
   .login-container{
-    position: absolute;
-    margin-top: -600px;
-    z-index: 5;
+    justify-self: center;
     align-self: center;
+    align-items: center;
     margin-left: 40px;
-
   }
 
   .screen__content{
@@ -106,8 +104,12 @@ body{
 
   .screen__content, .login-screen__content{
     display: flex;
-    align-content: center;
-    margin-left: 0;
+    align-content: center; 
+    margin-left: 0px;
+  }
+
+  .login-screen__content{
+    justify-content: center;
   }
 
   .signup{
